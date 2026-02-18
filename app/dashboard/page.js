@@ -1,20 +1,19 @@
 "use client";
-import { GlobalHub } from '@/components/VortexMedia';
+import { GlobalHub } from '../../components/VortexMedia';
 
 export default function Dashboard() {
   return (
-    <div className="min-h-screen bg-slate-950 p-8">
+    <div className="min-h-screen bg-slate-950 p-8 text-white font-sans">
       <header className="mb-12">
-        <h1 className="text-4xl font-black text-white">Dashboard</h1>
-        <p className="text-gray-400">Hoş geldin Sinan, bugün neyi otonomlaştıralım?</p>
+        <h1 className="text-4xl font-black italic text-indigo-500">VORTEX PANEL</h1>
+        <p className="text-gray-400 mt-2">Hoş geldin Sinan, bugün her şey otonom!</p>
       </header>
       
       {/* Medya ve Haber Merkezi */}
       <GlobalHub />
       
-      {/* Buraya ileride analiz grafikleri gelecek */}
-      <div className="mt-12 h-64 bg-white/5 border border-white/10 rounded-3xl flex items-center justify-center text-gray-500 italic">
-        Veri Analiz Modülü Yükleniyor...
+      <div className="mt-12 p-8 border border-white/10 rounded-[2rem] bg-white/5 text-center italic text-gray-500">
+        Analiz modülleri ve AI verileri burada işlenecek...
       </div>
     </div>
   );
